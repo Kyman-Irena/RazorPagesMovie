@@ -19,10 +19,9 @@ namespace RazorPagesMovie.Pages.Movies
             _context = context;
         }
 
-        public IList<Movie> Movie { get;set; }
+        public PaginatedList<Movie> Movie { get; set; }
         public string SearchString { get; set; }
         public string Scripture { get; set; }
-        public string MovieGenre { get; set; }
         public DateTime ReleaseDate { get; set; }
         public string NameSort { get; set; }
         public string DateSort { get; set; }

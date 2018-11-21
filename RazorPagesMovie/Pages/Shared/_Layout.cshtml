@@ -1,13 +1,16 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Scripture Journal</title>
 
     <environment include="Development">
+        <link rel="stylesheet" href="~/Styles/Journal.css" />
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -44,7 +47,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - Scripture Journal - Iryna Kyman</p>
+            <p>&copy; @DateTime.Now.Year - Scripture Journal - Iryna Kyman</p>
         </footer>
     </div>
 
